@@ -87,7 +87,7 @@ for y in range(len(list_I)):
 
 
 window_length = len(list_I) # Кол-во наблюдений
-y1 = [ϕ**k / (1 - O**2) for window_length in list_I]
+y1 = [f**k / (1 - O**2) for window_length in list_I]
 y2 = [np.cos(np.pi * window_length) for window_length in list_I]
 y3 = [a * b for a, b in pair(y1, y2)]
 
